@@ -78,7 +78,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Wish Dad')
         </div>
     </div>
     <div class="main-wrapper">
-        <div class="left-col" style="background-image: url(form/images/daudad.jpg);"></div>
+        <div class="left-col" style="background-image: url(form/images/daudad.jpg); background-size: cover;"></div>
         <div class="right-col">
             <img class="dad-img" src="form/images/Dad.png" alt="">
             <h4 style="text-align: center; line-height: 1.3;">Is your dad the best Dad<br>in the #FeeliFeeli universe? Prove it! </h4>

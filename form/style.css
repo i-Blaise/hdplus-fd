@@ -235,10 +235,6 @@ body{
 .left-col {
     height: 75vh;
     width: 50vw;
-<<<<<<< HEAD
-    background-image: url(images/daudad.jpg);
-=======
->>>>>>> e43af0b87384c56c783341042e137c00b7dfa2e2
     background-size: cover;
 }
 .right-col {

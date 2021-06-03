@@ -56,6 +56,7 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
       </div>
     
     <section id='container'>
+        <div id="capture">
         <div class="card_wrapper">
             <div class="right-col_wrapper">
                 <div class="inner-wrapper">
@@ -78,8 +79,31 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
                 </div>
             </div> 
         </div>
+        </div>
+        <button id="btn">Download Certificate</button>
+        <script>
+          function capture() {
+	const capture = document.querySelector('#capture')
+	html2canvas(capture)
+		.then(canvas => {
+			document.body.appendChild(canvas)
+			canvas.style.display = 'none'
+			return canvas
+		})
+		.then(canvas => {
+			const image = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream')
+			const a = document.createElement('a')
+			a.setAttribute('download', 'my-image.png')
+			a.setAttribute('href', image)
+			a.click()
+			canvas.remove()
+		})
+}
+
+const btn = document.querySelector('#btn')
+btn.addEventListener('click', capture)
+        </script>
     </section>
-  <button id="save_image_locally">download img</button>
   
     <div class="footer">
         <div class="omg-wrapper">
@@ -108,34 +132,7 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
        </div>
        <div class="ses-wrapper"><a href="https://www.ses.com/">SES GROUP</a></div>
        <div class="c-rigth"><p class="p-footer">COPYRIGHT © 2020 ALL RIGHTS RESERVED</p></div>
-       </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </body>
-
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script>
-
-
-
-  function capture() {
-  const capture = document.querySelector('#container')
-	html2canvas(capture)
-		.then(canvas => {
-			document.body.appendChild(canvas)
-			canvas.style.display = 'inline'
-			return canvas
-		})
-		.then(canvas => {
-			const image = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream')
-			const a = document.createElement('a')
-			a.setAttribute('download', 'my-image.png')
-			a.setAttribute('href', image)
-			a.click()
-			canvas.remove()
-		})
-}
-
-const btn = document.querySelector('#save_image_locally')
-btn.addEventListener('click', capture)
-
-</script>
 </html>

@@ -3,32 +3,54 @@
 body{
   margin: 0;
   font-family: 'Epilogue', sans-serif;
+  background: #fff;
 }
 section{
+    background: #fff;
     height: 100%;
     width: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-.card_wrapper {
+#capture {
+  background: #fff;
+  padding: 20px;
+}
+#card_wrapper {
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0px 260px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 0px 260px rgb(0 0 0 / 10%); */
     background: url(images/E-CARD-final.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
-    width: 55%;
-    border-bottom: 16px solid #fff;
+    height: 437px;
+    max-height: 437px;
+    width: 43.959vw;
+    max-width: 43.959vw;
+    border: 16px solid #c0a137;
+}
+#btn {
+  -webkit-appearance: none;
+  opacity: 1;
+  font-family: 'Epilogue', sans-serif;
+  padding: 20px;
+  background: #987914;
+  color: #fff;
+  border: 1px solid #987914;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#btn:hover{
+  background: #c79f1c;
+  border: 1px solid #c79f1c;
+  border-radius: 5px;
 }  
 .inner-wrapper {
-    position: relative;
-    right: 6.8rem;
-    bottom: 2rem;
+    margin-right: 0;
 }
 h4.mum-name {
   font-family: 'Yellowtail', cursive;
@@ -45,6 +67,7 @@ h4.mum-name {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 3rem;
 }
 .to_wrapper , .from_wrapper , .message_wrapper {
   margin: 20px auto;
@@ -69,21 +92,17 @@ h4.mum-name {
     width: 200px;
     height: 20px;
 }
-.hd-img {
-    margin: 40px 20px;
-    position: absolute;
-    left: -33rem;
-}
 .pos-rel {
     display: flex;
     align-items: center;
-    position: relative;
-    right: 35px;
+    justify-content: flex-end;
 }
 .code-wrapper {
     display: flex;
     align-items: baseline;
     height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* NAV CSS */

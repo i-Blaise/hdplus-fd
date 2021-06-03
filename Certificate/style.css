@@ -11,24 +11,28 @@ section{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-.card_wrapper {
+#capture {
+  background: #fefefe;
+  padding: 40px;
+}
+#card_wrapper {
     display: flex;
     justify-content: flex-end;
     box-shadow: 0 0px 260px rgb(0 0 0 / 10%);
     background: url(images/E-CARD-final.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 550px;
-    width: 55%;
-    border-bottom: 16px solid #fff;
+    max-height: 550px;
+    width: 44vw;
+    max-width: 44vw;
+    border: 16px solid #fff;
 }  
 .inner-wrapper {
-    position: relative;
-    right: 6.8rem;
-    bottom: 2rem;
+    margin-right: 2rem;
 }
 h4.mum-name {
   font-family: 'Yellowtail', cursive;
@@ -45,6 +49,7 @@ h4.mum-name {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 3rem;
 }
 .to_wrapper , .from_wrapper , .message_wrapper {
   margin: 20px auto;
@@ -69,21 +74,15 @@ h4.mum-name {
     width: 200px;
     height: 20px;
 }
-.hd-img {
-    margin: 40px 20px;
-    position: absolute;
-    left: -33rem;
-}
 .pos-rel {
     display: flex;
     align-items: center;
-    position: relative;
-    right: 35px;
 }
 .code-wrapper {
     display: flex;
     align-items: baseline;
     height: 50px;
+    margin-top: 50px;
 }
 
 /* NAV CSS */

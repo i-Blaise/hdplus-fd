@@ -1,9 +1,9 @@
 <?php
 session_start();
 define('DB_SERVER','localhost');
-define('DB_USER','u603429269_hdplus');
-define('DB_PASS' ,'Mennia123');
-define('DB_NAME', 'u603429269_hdplus_fd');
+define('DB_USER','root');
+define('DB_PASS' ,'');
+define('DB_NAME', 'hdplus_certificate');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

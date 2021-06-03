@@ -8,7 +8,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Wish Dad')
    {
     $_SESSION['code'] = 'HDP'.mt_rand(10000000, 99999999);
     $result = $mainPlug->saveInput($_POST, $_SESSION['code']);
-    header('Location: http://localhost/hdplus-certificate/certificate/');
+    header('Location: http://localhost/hdplus-fd/certificate/');
     // print_r($result);
     // die();
    }

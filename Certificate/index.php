@@ -6,7 +6,7 @@ $mainPlug = new mainClass();
 if(isset($_SESSION['code']) && !empty($_SESSION['code']))
 {
   $result = $mainPlug->fetchInput($_SESSION['code']);
-  // session_destroy();
+  session_destroy();
 }
 ?>
 
@@ -55,9 +55,9 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
         </div>
       </div>
     
-    <section>
+    <section id='container'>
         <div class="card_wrapper">
-            <div class="right-col_wrapper" id='container'>
+            <div class="right-col_wrapper">
                 <div class="inner-wrapper">
                 <div class="from_wrapper">
                     <h4>Your name: <?php echo $result['your_name']; ?></h4>

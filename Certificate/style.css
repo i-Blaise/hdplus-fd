@@ -3,8 +3,10 @@
 body{
   margin: 0;
   font-family: 'Epilogue', sans-serif;
+  background: #fff;
 }
 section{
+    background: #fff;
     height: 100%;
     width: auto;
     display: flex;
@@ -15,24 +17,40 @@ section{
     padding-bottom: 80px;
 }
 #capture {
-  background: #fefefe;
-  padding: 40px;
+  background: #fff;
+  padding: 20px;
 }
 #card_wrapper {
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0px 260px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 0px 260px rgb(0 0 0 / 10%); */
     background: url(images/E-CARD-final.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
-    max-height: 550px;
-    width: 44vw;
-    max-width: 44vw;
-    border: 16px solid #fff;
+    height: 437px;
+    max-height: 437px;
+    width: 43.959vw;
+    max-width: 43.959vw;
+    border: 16px solid #c0a137;
+}
+#btn {
+  -webkit-appearance: none;
+  opacity: 1;
+  font-family: 'Epilogue', sans-serif;
+  padding: 20px;
+  background: #987914;
+  color: #fff;
+  border: 1px solid #987914;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#btn:hover{
+  background: #c79f1c;
+  border: 1px solid #c79f1c;
+  border-radius: 5px;
 }  
 .inner-wrapper {
-    margin-right: 2rem;
+    margin-right: 0;
 }
 h4.mum-name {
   font-family: 'Yellowtail', cursive;
@@ -77,12 +95,14 @@ h4.mum-name {
 .pos-rel {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .code-wrapper {
     display: flex;
     align-items: baseline;
     height: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* NAV CSS */

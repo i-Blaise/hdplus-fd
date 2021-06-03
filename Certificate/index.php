@@ -288,9 +288,6 @@ h4.mum-name {
     font-weight: 300;
     padding: 1rem 3rem;
     
-<<<<<<< HEAD
-    <section id='container'>
-=======
   }
   .p-footer{
     color: rgb(255 255 255 / 17%);
@@ -301,7 +298,6 @@ h4.mum-name {
   </style>
 <body>
 <section>
->>>>>>> 66b884051608beda68dff6f2a1f9f403a2f525bc
         <div class="card_wrapper">
             <div class="right-col_wrapper">
                 <div class="inner-wrapper">

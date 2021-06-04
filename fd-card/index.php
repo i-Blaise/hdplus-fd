@@ -1,3 +1,15 @@
+<?php
+require_once('../ClassLibraries/MainClass.php');
+$mainPlug = new mainClass();
+
+
+if(isset($_SESSION['code']) && !empty($_SESSION['code']))
+{
+  $result = $mainPlug->fetchInput($_SESSION['code']);
+  session_destroy();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,11 +61,11 @@
             <div class="right-col_wrapper">
                 <div class="inner-wrapper">
                 <div class="from_wrapper">
-                    <h4>Your name:</h4>
+                    <h4>Your name: <?php echo $result['your_name']; ?></h4>
                     <p></p>
                 </div>
                 <div class="to_wrapper">
-                    <h4>Father's name:</h4>
+                    <h4>Father's name: <?php echo $result['fathers_name']; ?></h4>
                     <p></p>
                 </div>
                 <div class="message_wrapper">
@@ -63,7 +75,8 @@
                 </div>
                 </div>
                 <div class="pos-rel">  
-                    <div class="code-wrapper"><h3 class="code-h3">Code:</h3><span class="code-span"></span></div>
+                <div class="code-wrapper"><h3 class="code-h3">Code:</h3><span class="code-span"><?php echo $result['code']; ?>
+                </span></div>
                 </div>
             </div> 
         </div>

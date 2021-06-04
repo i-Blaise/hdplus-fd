@@ -61,16 +61,16 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
             <div class="right-col_wrapper">
                 <div class="inner-wrapper">
                 <div class="from_wrapper">
-                    <h4>Your name: <?php echo $result['your_name']; ?></h4>
+                    <h4>Your name: <span style="color: #000;"><?php echo $result['your_name']; ?></span></h4>
                     <p></p>
                 </div>
                 <div class="to_wrapper">
-                    <h4>Father's name: <?php echo $result['fathers_name']; ?></h4>
+                    <h4>Father's name: <span style="color: #000;"><?php echo $result['fathers_name']; ?></span></h4>
                     <p></p>
                 </div>
                 <div class="message_wrapper">
                     <p style="margin-top: 30px;"><strong>This document is to certify</strong></p>
-                    <h4 class="mum-name"></h4>
+                    <h4 class="mum-name"><?php echo $result['fathers_name']; ?></h4>
                     <p><strong>as the best Dad in the #Feelifeeli universe</strong></p>
                 </div>
                 </div>

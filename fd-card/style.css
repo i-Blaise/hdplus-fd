@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 body{
   margin: 0;
@@ -53,15 +53,13 @@ section{
     margin-right: 0;
 }
 h4.mum-name {
-  font-family: 'Yellowtail', cursive;
-  font-size: 36px;
-  color: #e50e36!important;
-  margin: 0 auto 0!important;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: #000!important;
+  margin: 0!important;
   width: 344px;
   max-width: 344px;
   font-weight: 500!important;
-  border-bottom: 1px solid #000;
-  padding: 0 5px 0;
 }
 .right-col_wrapper {
     display: flex;
@@ -71,11 +69,14 @@ h4.mum-name {
 }
 .to_wrapper , .from_wrapper , .message_wrapper {
   margin: 20px auto;
+  width: 350px;
+  max-width: 350px;
+  border-bottom: 1px solid #b1b1b1;
 }
 .to_wrapper h4, .from_wrapper h4, .message_wrapper h4 {
     color: #e50e36;
-    margin: 30px auto 0;
-    font-weight: 800;
+    margin: 30px auto 10px;
+    font-weight: 700;
 }
 .to_wrapper p {
     margin: 15px auto 0;
@@ -87,11 +88,11 @@ h4.mum-name {
 }
 .code-span {
     background: #e5e5e5;
-    color: #8c8c8c;
     margin-left: 10px;
-    padding: 8px 12px;
-    width: 100px;
-    height: 20px;
+    padding: 10px;
+    width: 125px;
+    height: 15px;
+    text-align: center;
 }
 .pos-rel {
     display: flex;
@@ -100,7 +101,7 @@ h4.mum-name {
 }
 .code-wrapper {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     height: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -360,7 +361,7 @@ i.fas.fa-search {
   display: flex;
   justify-content: flex-end;
   background: url(images/E-CARD-final.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 220px;
   max-height: 225px;
@@ -383,22 +384,45 @@ i.fas.fa-search {
 .code-wrapper {
   display: flex;
   align-items: baseline;
-  height: 20px;
+  height: 10px;
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .code-h3 {
   margin-top: 40px;
   color: lightgray;
 }
 .message_wrapper>p{
-  margin-top: 20px!important;
+  margin-top: 15px!important;
 }
 h4.mum-name {
-  font-size: 24px;
-  margin: 0 auto 0!important;
-  width: 200px;
-  max-width: 200px;
+  font-size: 16px;
+  margin: 0!important;
+  width: 180px;
+  max-width: 180px;
   padding: 0 5px 7px;
+}
+.to_wrapper, .from_wrapper, .message_wrapper {
+    margin: 15px auto;
+    width: 200px;
+    max-width: 250px;
+}
+.to_wrapper h4, .from_wrapper h4, .message_wrapper h4 {
+    margin: 15px auto 5px;
+}
+.code-span {
+    background: #e5e5e5;
+    color: #8c8c8c;
+    margin-left: 10px;
+    padding: 8px 12px;
+    width: 100px;
+    height: 10px;
+}
+.pos-rel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 25px;
 }
 }

@@ -19,7 +19,7 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>HD Plus Father's Day</title>
+    <title>HD Plus Father's Day </title>
 </head>
 <body>
     <div class="nav">
@@ -61,25 +61,26 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
             <div class="right-col_wrapper">
                 <div class="inner-wrapper">
                 <div class="from_wrapper">
-                    <h4>Your name: <span style="color: #000;"><?php echo $result['your_name']; ?></span></h4>
-                    <p></p>
+                    <h4>Proudly presented to:</h4>
+                    <span style="color: #000;"><?php echo $result['your_name']; ?></span>
                 </div>
                 <div class="to_wrapper">
-                    <h4>Father's name: <span style="color: #000;"><?php echo $result['fathers_name']; ?></span></h4>
-                    <p></p>
+                    <h4>Your name:</h4>
+                    <span style="color: #000;"><?php echo $result['fathers_name']; ?></span>
                 </div>
                 <div class="message_wrapper">
-                    <p style="margin-top: 30px;"><strong>This document is to certify</strong></p>
-                    <h4 class="mum-name"><?php echo $result['fathers_name']; ?></h4>
-                    <p><strong>as the best Dad in the #Feelifeeli universe</strong></p>
+                <p style="margin-top: 30px; margin-bottom: 10px;"><strong>What you love about your dad:</strong></p>
+                    <span style="color: #000; line-height: 1.3;"><?php echo $result['your_message']; ?></span>
                 </div>
                 </div>
                 <div class="pos-rel">  
-                <div class="code-wrapper"><h3 class="code-h3">Code:</h3><span class="code-span"><?php echo $result['code']; ?>
-                </span></div>
+                  <div class="code-wrapper">
+                    <h3 class="code-h3">Code:</h3>
+                    <span class="code-span"><?php echo $result['code']; ?></span>
+                  </div>
                 </div>
             </div> 
-        </div>
+          </div>
         </div>
         <button id="btn">Download Certificate</button>
         <script>

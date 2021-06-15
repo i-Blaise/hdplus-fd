@@ -85,6 +85,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Wish Dad')
             <form id="dad-day" action="" method="post">
                 <input type="text" id="your_name" name="your_name" placeholder="Enter your name">
                 <input type="text" id="fathers_name" name="fathers_name" placeholder="Enter your father's name">
+                <textarea name="your_message" id="your_message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                 <input type="submit" name="submit" value="Wish Dad">
             </form>
         </div>

@@ -83,9 +83,9 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Wish Dad')
             <img class="dad-img" src="form/images/Dad.png" alt="">
             <h4 style="text-align: center; line-height: 1.3;">Is your dad the best Dad<br>in the #FeeliFeeli universe? Prove it! </h4>
             <form id="dad-day" action="" method="post">
-                <input type="text" id="your_name" name="your_name" placeholder="Enter your name">
-                <input type="text" id="fathers_name" name="fathers_name" placeholder="Enter your father's name">
-                <textarea name="your_message" id="your_message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <input type="text" id="your_name" name="your_name" placeholder="Enter your name" required>
+                <input type="text" id="fathers_name" name="fathers_name" placeholder="Enter your father's name" required>
+                <textarea name="your_message" id="your_message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
                 <input type="submit" name="submit" value="Wish Dad">
             </form>
         </div>

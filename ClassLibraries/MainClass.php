@@ -22,13 +22,16 @@ class mainClass extends DataBase{
         {
             $your_name = $inputData['your_name'];
             $fathers_name = $inputData['fathers_name'];
+            $your_message = $inputData['your_message'];
 
             $myQuery = "INSERT INTO certificate_input  (
                 your_name,
                 fathers_name,
+                your_message,
                 code) VALUES (
                 '$your_name',
                 '$fathers_name',
+                '$your_message',
                 '$code'
                 )";
 

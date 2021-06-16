@@ -233,13 +233,13 @@ i.fas.fa-search {
   margin: 5rem;
 }
 .left-col {
-  height: 75vh;
+  height: 90vh;
   width: 50vw;
   background-size: cover;
 }
 .right-col {
   background: #F2A922;
-  height: 75vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

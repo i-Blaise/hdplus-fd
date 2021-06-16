@@ -1,111 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-body{
-  margin: 0;
-  font-family: 'Epilogue', sans-serif;
-  background: #fff;
-}
-section{
+  body{
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
     background: #fff;
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-#capture {
-  background: #fff;
-  padding: 20px;
-}
-#card_wrapper {
-    display: flex;
-    justify-content: flex-end;
-    /* box-shadow: 0 0px 260px rgb(0 0 0 / 10%); */
-    background: url(images/E-CARD-final.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 437px;
-    max-height: 437px;
-    width: 43.959vw;
-    max-width: 43.959vw;
-    border: 16px solid #c0a137;
-}
-#btn {
-  -webkit-appearance: none;
-  opacity: 1;
-  font-family: 'Epilogue', sans-serif;
-  padding: 20px;
-  background: #987914;
-  color: #fff;
-  border: 1px solid #987914;
-  border-radius: 5px;
-  font-size: 14px;
-}
-#btn:hover{
-  background: #c79f1c;
-  border: 1px solid #c79f1c;
-  border-radius: 5px;
-}  
-.inner-wrapper {
-    margin-right: 0;
-}
-h4.mum-name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 28px;
-  color: #000!important;
-  margin: 0!important;
-  width: 344px;
-  max-width: 344px;
-  font-weight: 500!important;
-}
-.right-col_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 3rem;
-}
-.to_wrapper , .from_wrapper , .message_wrapper {
-  margin: 20px auto;
-  width: 350px;
-  max-width: 350px;
-  border-bottom: 1px solid #b1b1b1;
-}
-.to_wrapper h4, .from_wrapper h4, .message_wrapper h4 {
-    color: #e50e36;
-    margin: 30px auto 10px;
-    font-weight: 700;
-}
-.to_wrapper p {
-    margin: 15px auto 0;
-}
-.code-h3 {
-    margin-top: 30px;
-    position: relative;
-    color: lightgray;
-}
-.code-span {
-    background: #e5e5e5;
-    margin-left: 10px;
-    padding: 10px;
-    width: 125px;
-    height: 15px;
-    text-align: center;
-}
-.pos-rel {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.code-wrapper {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+  }
+  section{
+      background: #fff;
+      height: 100%;
+      width: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  #capture {
+    background: #fff;
+    padding: 20px;
+  }
+  #card_wrapper {
+      display: flex;
+      justify-content: flex-end;
+      /* box-shadow: 0 0px 260px rgb(0 0 0 / 10%); */
+      background: url(images/E-CARD-final.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 437px;
+      max-height: 437px;
+      width: 43.959vw;
+      max-width: 43.959vw;
+      border: 16px solid #c0a137;
+  }
+  #btn {
+    -webkit-appearance: none;
+    opacity: 1;
+    font-family: 'Epilogue', sans-serif;
+    padding: 20px;
+    background: #987914;
+    color: #fff;
+    border: 1px solid #987914;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  #btn:hover{
+    background: #c79f1c;
+    border: 1px solid #c79f1c;
+    border-radius: 5px;
+  }  
+  .inner-wrapper {
+      margin-right: 0;
+  }
+  h4.mum-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #000!important;
+    margin: 0!important;
+    width: 344px;
+    max-width: 344px;
+    font-weight: 500!important;
+  }
+  .right-col_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 3rem;
+  }
+  .to_wrapper , .from_wrapper , .message_wrapper {
+    margin: 20px auto;
+    width: 350px;
+    max-width: 350px;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  .to_wrapper h4, .from_wrapper h4, .message_wrapper h4 {
+      color: #e50e36;
+      margin: 30px auto 10px;
+      font-weight: 700;
+  }
+  .to_wrapper p {
+      margin: 15px auto 0;
+  }
+  .code-h3 {
+      margin-top: 30px;
+      position: relative;
+      color: lightgray;
+  }
+  .code-span {
+      background: #e5e5e5;
+      margin-left: 10px;
+      padding: 10px;
+      width: 125px;
+      height: 15px;
+      text-align: center;
+  }
+  .pos-rel {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  .code-wrapper {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
 
 /* NAV CSS */
 .nav {

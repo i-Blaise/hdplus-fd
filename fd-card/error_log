@@ -1,0 +1,2 @@
+[18-Jun-2021 21:09:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/hdpluscom/public_html/Fathersday/ClassLibraries/DatabaseCon.php:22) in /home/hdpluscom/public_html/Fathersday/fd-card/index.php on line 11
+[18-Jun-2021 21:09:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/hdpluscom/public_html/Fathersday/ClassLibraries/DatabaseCon.php:22) in /home/hdpluscom/public_html/Fathersday/fd-card/index.php on line 11

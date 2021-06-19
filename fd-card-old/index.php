@@ -7,8 +7,6 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
 {
   $result = $mainPlug->fetchInput($_SESSION['code']);
   session_destroy();
-}else{
-    header("Location: https://www.hd-plus.com.gh/Fathersday/");
 }
 ?>
 
@@ -18,7 +16,7 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>HD Plus Father's Day </title>
@@ -61,28 +59,26 @@ if(isset($_SESSION['code']) && !empty($_SESSION['code']))
         <div id="capture">
           <div id="card_wrapper">
             <div class="right-col_wrapper">
-              <div class="inner-wrapper">
-                  <div class="custom-font">
-                    <img class="logo-img" src="images/E-CARD-logo.png" alt="fd-logo" width="200">
-                  </div>
+                <div class="inner-wrapper">
                 <div class="from_wrapper">
-                    <h4>PROUDLY PRESENTED TO:</h4>
-                    <span style="color: #000;"><?php echo $result['your_name']; ?></span>
-                </div>
-                <div class="to_wrapper">
-                    <h4>YOUR NAME:</h4>
+                    <h4>Proudly presented to:</h4>
                     <span style="color: #000;"><?php echo $result['fathers_name']; ?></span>
                 </div>
+                <div class="to_wrapper">
+                    <h4>Your name:</h4>
+                    <span style="color: #000;"><?php echo $result['your_name']; ?></span>
+                </div>
                 <div class="message_wrapper">
+                <p style="margin-top: 30px; margin-bottom: 10px;"><strong>What you love about your dad:</strong></p>
                     <span style="color: #000; line-height: 1.3;"><?php echo $result['your_message']; ?></span>
                 </div>
-                <!--<div class="pos-rel">  -->
-                <!--    <div class="code-wrapper">-->
-                <!--      <h3 class="code-h3">Code:</h3>-->
-                <!--      <span class="code-span"><?php echo $result['code']; ?></span>-->
-                <!--    </div>-->
-                <!--</div>-->
-             </div>
+                </div>
+                <div class="pos-rel">  
+                  <div class="code-wrapper">
+                    <h3 class="code-h3">Code:</h3>
+                    <span class="code-span"><?php echo $result['code']; ?></span>
+                  </div>
+                </div>
             </div> 
           </div>
         </div>
